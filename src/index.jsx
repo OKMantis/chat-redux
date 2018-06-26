@@ -11,9 +11,9 @@ import '../assets/stylesheets/application.scss';
 // State and reducers
 const reducers = combineReducers({
  messages: messageReducer,
- channels: ,
- currentUser: ,
- selectedChannel:
+ channels: channelsReducer,
+ currentUser: currentUserReducer,
+ selectedChannel: selectedChannelReducer
 });
 
 
