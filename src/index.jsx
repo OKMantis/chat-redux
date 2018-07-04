@@ -8,9 +8,14 @@ import { createStore, combineReducers } from 'redux';
 import App from './components/app';
 import '../assets/stylesheets/application.scss';
 
+import messagesReducer from './reducers/messages_reducer';
+import channelsReducer from './reducers/channels_reducer';
+import currentUserReducer from './reducers/current_user_reducer';
+import selectedChannelReducer from './reducers/selected_channel_reducer';
+
 // State and reducers
 const reducers = combineReducers({
- messages: messageReducer,
+ messages: messagesReducer,
  channels: channelsReducer,
  currentUser: currentUserReducer,
  selectedChannel: selectedChannelReducer
